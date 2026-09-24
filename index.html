@@ -1,1 +1,189 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>GitHub 測試</title></head><body><h1>Hello！GitHub 連接成功！</h1></body></html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GD 官網 About 頁面修改回饋</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f7f4;color:#1f2923;line-height:1.8}
+.container{width:min(1120px,calc(100% - 40px));margin:auto}
+.hero{background:linear-gradient(135deg,#102b20 0%,#204c36 100%);color:white;padding:90px 0 70px}
+.eyebrow{font-size:14px;letter-spacing:.14em;opacity:.75;margin-bottom:16px}
+h1{margin:0;font-size:clamp(36px,5vw,64px);line-height:1.15;letter-spacing:-.04em}
+.hero p{max-width:760px;font-size:18px;opacity:.88;margin:26px 0 0}
+.section{padding:70px 0}.section.white{background:#fff}
+.section-title{margin-bottom:35px}.section-title span{display:block;color:#57836a;font-size:13px;letter-spacing:.15em;font-weight:700;margin-bottom:8px}
+.section-title h2{font-size:32px;margin:0;line-height:1.3}
+.lead{font-size:20px;max-width:880px}
+.highlight{margin-top:30px;padding:28px 32px;background:#e9f0eb;border-radius:18px;font-size:22px;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:white;padding:30px;border-radius:20px;border:1px solid #e3e9e5}
+.card-number{width:42px;height:42px;display:flex;align-items:center;justify-content:center;background:#183f2c;color:white;border-radius:50%;font-size:14px;font-weight:700;margin-bottom:18px}
+.card h3{margin:0 0 10px;font-size:22px}.card p{margin:0;color:#58615b}
+.tag-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.tag{padding:10px 16px;border-radius:999px;background:#eef2ef;font-size:14px;font-weight:600}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.compare-box{border-radius:20px;padding:32px;background:white;border:1px solid #dfe5e1}
+.compare-box.gd{background:#183f2c;color:white}
+.compare-box h3{font-size:22px;margin:0 0 22px}
+.flow{display:flex;flex-direction:column;gap:10px}.flow div{padding:12px 15px;border-radius:10px;background:rgba(120,140,128,.1)}
+.compare-box.gd .flow div{background:rgba(255,255,255,.1)}.arrow{text-align:center;opacity:.45}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feature{background:#fff;border-radius:18px;padding:25px;border:1px solid #e2e7e3}
+.feature strong{display:block;font-size:18px;margin-bottom:8px}.feature p{margin:0;font-size:15px;color:#626a64}
+.deliverables{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:25px}
+.deliverable{background:#edf2ee;padding:16px 18px;border-radius:12px;font-weight:600}
+.warning{border-left:4px solid #bf7b37;background:#fff9f1;padding:26px 30px;border-radius:0 16px 16px 0;margin-bottom:18px}
+.warning strong{display:block;margin-bottom:5px}
+.cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.cta{background:#fff;border-radius:22px;padding:32px;border:1px solid #dfe5e1}.cta h3{margin:0 0 10px}
+.button{display:inline-block;margin-top:18px;background:#183f2c;color:#fff;padding:12px 20px;border-radius:999px;font-size:14px;font-weight:700}
+.order{display:flex;flex-direction:column;gap:10px}.order-item{display:flex;align-items:center;gap:18px;padding:17px 20px;background:#fff;border-radius:14px;border:1px solid #e1e6e2}
+.order-no{font-size:13px;color:#6b786f;width:28px}
+.status{display:inline-block;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:700;margin-right:8px}
+.add{background:#e4f5e9;color:#1f6a39}.edit{background:#fff2d9;color:#8a5a00}.check{background:#e8eefb;color:#385b9b}
+footer{background:#102b20;padding:35px 0;color:rgba(255,255,255,.65);font-size:13px}
+@media(max-width:800px){.hero{padding:65px 0 55px}.grid,.compare,.feature-grid,.deliverables,.cta-grid{grid-template-columns:1fr}.section{padding:50px 0}.section-title h2{font-size:28px}.lead{font-size:18px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="container">
+    <div class="eyebrow">GD WEBSITE / ABOUT PAGE FEEDBACK</div>
+    <h1>GD 官網 About 頁面<br>修改回饋</h1>
+    <p>針對目前「關於我們」頁面的內容結構提出調整建議，重點是讓第一次進入官網的民眾與綠設計師，都能快速理解 GD 認證是什麼、怎麼把關，以及取得認證後的價值。</p>
+  </div>
+</header>
+
+<section class="section">
+<div class="container">
+  <div class="section-title"><span>01 / CURRENT ISSUE</span><h2>目前頁面的主要問題</h2></div>
+  <p class="lead">目前頁面對於 <strong>「全球綠認證機構是誰」</strong> 的介紹已經相對完整，但使用者看完之後，對於 <strong>「GD 綠裝修認證到底是什麼？」</strong> 仍然沒有非常直覺的答案。</p>
+  <div class="highlight">建議 About 頁面不要再增加大量技術規範，而是先讓使用者「看懂 GD」，再導往認證標準頁查完整規範。</div>
+</div>
+</section>
+
+<section class="section white">
+<div class="container">
+  <div class="section-title"><span>02 / NEW SECTION</span><h2><span class="status add">新增</span>什麼是 GD 綠裝修認證？</h2></div>
+  <p class="lead"><strong>GD 綠裝修認證</strong> 是一套針對室內裝修空間建立的第三方認證制度。</p>
+  <p>不同於只在完工後進行一次環境檢測，GD 從裝修前的規劃設計、建材選擇開始，到施工期間的材料與現場管理，以及完工後的環境品質檢測與驗收，透過完整制度降低室內裝修可能產生的健康風險。</p>
+  <div class="highlight">核心概念｜預防勝於治療<br>從裝修前開始把關，健康不是完工後才知道。</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+  <div class="section-title"><span>03 / CERTIFICATION PROCESS</span><h2><span class="status add">新增</span>GD 認證怎麼把關？</h2></div>
+  <div class="grid">
+    <div class="card"><div class="card-number">01</div><h3>規劃與設計</h3><p>裝修開始前即進行風險評估，從空間規劃、設計條件與相關設備開始預防。</p></div>
+    <div class="card"><div class="card-number">02</div><h3>建材應用及管理</h3><p>針對板材、塗料、接著劑、填縫劑等裝修材料進行規範與管理。</p></div>
+    <div class="card"><div class="card-number">03</div><h3>裝修環境管理</h3><p>施工期間從材料進場、施工方式到現場環境持續查核，降低施工過程造成的污染。</p></div>
+    <div class="card"><div class="card-number">04</div><h3>完工驗收</h3><p>完工後進行環境品質檢測與文件審查，通過正式標準後取得 GD 認證。</p></div>
+  </div>
+  <div class="tag-row">
+    <div class="tag">三期</div><div class="tag">四階</div><div class="tag">五把關</div>
+    <div class="tag">設計師</div><div class="tag">材料商</div><div class="tag">工班</div><div class="tag">設備商</div><div class="tag">業主</div>
+  </div>
+</div>
+</section>
+
+<section class="section white">
+<div class="container">
+  <div class="section-title"><span>04 / WHAT WE VERIFY</span><h2><span class="status add">新增</span>GD 認證在確認什麼？</h2></div>
+  <div class="feature-grid">
+    <div class="feature"><strong>健康選材</strong><p>降低甲醛、TVOC 等污染源進入室內空間。</p></div>
+    <div class="feature"><strong>施工管理</strong><p>避免好的材料因施工方式不當產生新的污染。</p></div>
+    <div class="feature"><strong>空氣品質</strong><p>以完工後實際檢測確認室內環境品質。</p></div>
+    <div class="feature"><strong>飲用水品質</strong><p>確認空間使用者實際接觸的飲用水環境。</p></div>
+    <div class="feature"><strong>光環境品質</strong><p>進一步確認照度與實際使用環境品質。</p></div>
+    <div class="feature"><strong>裝修履歷</strong><p>保存材料、審查、施工及檢測資料，留下可追溯紀錄。</p></div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+  <div class="section-title"><span>05 / DIFFERENCE</span><h2><span class="status add">新增</span>GD 與一般完工檢測有什麼不同？</h2></div>
+  <div class="compare">
+    <div class="compare-box">
+      <h3>一般完工檢測</h3>
+      <div class="flow"><div>裝修完成</div><div class="arrow">↓</div><div>進行環境檢測</div><div class="arrow">↓</div><div>確認當下檢測結果</div></div>
+    </div>
+    <div class="compare-box gd">
+      <h3>GD 綠裝修認證</h3>
+      <div class="flow"><div>裝修前預防</div><div class="arrow">↓</div><div>選材管理</div><div class="arrow">↓</div><div>施工過程查核</div><div class="arrow">↓</div><div>完工環境檢測</div><div class="arrow">↓</div><div>建立完整裝修履歷</div></div>
+    </div>
+  </div>
+  <div class="highlight">GD 的核心，不只是證明最後的結果，而是管理產生結果的整個裝修過程。</div>
+</div>
+</section>
+
+<section class="section white">
+<div class="container">
+  <div class="section-title"><span>06 / CERTIFICATION RESULT</span><h2><span class="status edit">調整</span>通過 GD 認證，可以獲得什麼？</h2></div>
+  <p class="lead">通過正式審查後，依審查結果取得相對應的 GD 認證級別，並留下完整的認證與裝修履歷。</p>
+  <div class="deliverables">
+    <div class="deliverable">GD 綠裝修認證證書</div>
+    <div class="deliverable">GD 認證水晶獎盃</div>
+    <div class="deliverable">GD 綠手冊／裝修履歷</div>
+    <div class="deliverable">設計及審查相關文件</div>
+    <div class="deliverable">施工現場審查紀錄</div>
+    <div class="deliverable">使用建材相關資料</div>
+    <div class="deliverable">空氣品質檢測報告</div>
+    <div class="deliverable">其他完工環境品質資料</div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+  <div class="section-title"><span>07 / POSITIONING</span><h2><span class="status add">新增</span>認證的不是設計風格，而是空間品質</h2></div>
+  <p class="lead">GD 不評斷空間美不美，也不指定設計風格。</p>
+  <p>無論住宅、辦公、商業或其他室內空間，都可以在原有設計理念之下，透過 GD 認證制度進一步管理健康與環境品質。</p>
+  <div class="highlight">健康 × 品質 × 永續</div>
+</div>
+</section>
+
+<section class="section white">
+<div class="container">
+  <div class="section-title"><span>08 / CTA</span><h2><span class="status add">新增</span>使用者入口建議</h2></div>
+  <div class="cta-grid">
+    <div class="cta"><h3>我是業主／一般民眾</h3><p>我想了解住宅、辦公室或商業空間，如何透過 GD 認證進行健康裝修把關。</p><span class="button">了解 GD 認證</span></div>
+    <div class="cta"><h3>我是綠設計師</h3><p>已有裝修案件，希望依照 GD 認證制度提出案件申請。</p><span class="button">開始申請認證</span></div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+  <div class="section-title"><span>09 / ENGINEERING NOTES</span><h2>工程師同步調整提醒</h2></div>
+  <div class="warning"><strong><span class="status check">確認</span>01｜全站認證名稱及階段名稱需統一</strong>About、認證介紹、認證標準、申請流程等頁面，請全部依目前正式制度統一。</div>
+  <div class="warning"><strong><span class="status edit">修改</span>02｜空氣品質檢測 SOP 請依最新版更新</strong>不使用舊版或示意檢測條件，所有時間、設備、採樣方式皆以現行正式規範為準。</div>
+  <div class="warning"><strong><span class="status edit">修改</span>03｜認證成果內容需更新</strong>證書、水晶獎盃、綠手冊／裝修履歷及相關檢測資料，依目前實際提供內容呈現。</div>
+  <div class="warning"><strong><span class="status check">確認</span>04｜認證級別及條件不可自行使用示意數值</strong>白金、黃金、銀、銅等級，包含分數、材料比例與檢測條件，一律以最新版正式認證規範為準。</div>
+  <div class="warning"><strong><span class="status edit">調整</span>05｜About 與 Standards 頁面功能需區隔</strong>About 的任務是讓人快速「看懂 GD」；Standards 才負責提供完整技術規範及查詢。</div>
+</div>
+</section>
+
+<section class="section white">
+<div class="container">
+  <div class="section-title"><span>10 / INFORMATION ARCHITECTURE</span><h2>About 頁面建議資訊順序</h2></div>
+  <div class="order">
+    <div class="order-item"><span class="order-no">01</span>GGCB 是誰</div>
+    <div class="order-item"><span class="order-no">02</span>使命／願景／核心價值</div>
+    <div class="order-item"><span class="order-no">03</span>什麼是 GD 綠裝修認證</div>
+    <div class="order-item"><span class="order-no">04</span>三期・四階・五把關</div>
+    <div class="order-item"><span class="order-no">05</span>GD 與一般完工檢測的不同</div>
+    <div class="order-item"><span class="order-no">06</span>通過認證可以得到什麼</div>
+    <div class="order-item"><span class="order-no">07</span>獨立公正與利益迴避</div>
+    <div class="order-item"><span class="order-no">08</span>申訴與公開制度</div>
+  </div>
+  <div class="highlight">整體閱讀邏輯：「你們是誰」→「GD 是什麼」→「怎麼做到」→「為什麼值得信任」</div>
+</div>
+</section>
+
+<footer><div class="container">GD 官網 About 頁面修改回饋｜工程討論版</div></footer>
+</body>
+</html>
